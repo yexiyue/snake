@@ -1,0 +1,36 @@
+/* 设置变量 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#app {
+  width: 360px;
+  height: 420px;
+  background-color: #b7dea8;
+  margin: 100px auto;
+  border: 10px solid black;
+  border-radius: 30px;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+  align-items: center;
+  font: 700 20px "Courier";
+}
+#app #stage {
+  width: 304px;
+  height: 304px;
+  border: 2px solid black;
+}
+#app #stage #snake > div {
+  width: 10px;
+  height: 10px;
+  background-color: black;
+  border: 1px solid #b7dea8;
+  position: absolute;
+}
+#app #score-panel {
+  display: flex;
+  width: 300px;
+  justify-content: space-between;
+}

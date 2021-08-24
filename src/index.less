@@ -1,0 +1,40 @@
+/* 设置变量 */
+@bg-color:#b7dea8;
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#app{
+    width: 360px;
+    height:420px;
+    background-color: @bg-color;
+    margin:100px auto;
+    border:10px solid black;
+    border-radius: 30px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: center;
+    #stage{
+        width: 304px;
+        height:304px;
+        border:2px solid black;
+        #snake{
+            &>div{
+                width:10px;
+                height:10px;
+                background-color: black;
+                border:1px solid @bg-color;
+                position: absolute;
+            }
+        }
+    }
+    #score-panel{
+        display: flex;
+        width:300px;
+        justify-content: space-between;
+    }
+    font:700 20px "Courier";
+}
